@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-first-repo-app';
+  title = 'Hello Github! This is my first Angular push.';
 }
