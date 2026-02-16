@@ -1,0 +1,19 @@
+<div class="region-container">
+  <div class="region-header">
+    <h2>Kanto Gym Leaders</h2>
+    <p>The 8 Gym Leaders of the Kanto Region</p>
+  </div>
+  
+  <div class="leaders-list">
+    <app-leader-info
+      *ngFor="let leader of kantoLeaders"
+      [name]="leader.name"
+      [age]="leader.age"
+      [location]="leader.location"
+      [team]="leader.team"
+      [badge]="leader.badge"
+      [motto]="leader.motto"
+      (monologueClick)="onMonologueClick($event)">
+    </app-leader-info>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="home-container">
+  <div class="hero-section">
+    <h1>Welcome to the World of Pokémon</h1>
+    <p>Discover the rich history of the Kanto and Johto regions</p>
+  </div>
+
+  <div class="regions-grid">
+    <div class="region-card" *ngFor="let region of regions">
+      <h2>{{region.name}}</h2>
+      <p class="region-description">{{region.description}}</p>
+      <div class="region-history">
+        <h3>History</h3>
+        <p>{{region.history}}</p>
+      </div>
+      <div class="region-details">
+        <p><strong>Professor:</strong> {{region.professor}}</p>
+        <p><strong>Starter Pokémon:</strong> {{region.starters.join(', ')}}</p>
+      </div>
+    </div>
+  </div>
+</div>

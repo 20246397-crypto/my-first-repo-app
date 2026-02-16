@@ -1,0 +1,36 @@
+<div class="leader-card" [class.expanded]="showDetails">
+  <div class="leader-header" (click)="toggleDetails()">
+    <div class="leader-basic-info">
+      <h3 class="leader-name">{{name}}</h3>
+      <span class="leader-badge">{{badge}} Badge</span>
+    </div>
+    <button class="toggle-btn">
+      {{showDetails ? '▼' : '▶'}}
+    </button>
+  </div>
+  
+  <div class="leader-details" *ngIf="showDetails">
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="info-label">Age:</span>
+        <span class="info-value">{{age}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Location:</span>
+        <span class="info-value">{{location}}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Specialty:</span>
+        <span class="info-value">{{team}}</span>
+      </div>
+    </div>
+    
+    <div class="motto-section">
+      <p class="motto-text">"{{motto}}"</p>
+    </div>
+    
+    <button class="monologue-btn" (click)="onMonologueClick()">
+      Hear Monologue
+    </button>
+  </div>
+</div>
