@@ -1,20 +1,24 @@
 .leader-card {
-  background: white;
-  border-radius: 8px;
+  background: rgba(106, 75, 190, 0.7);
+  border-radius: 12px;
   margin-bottom: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .leader-card.expanded {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background: rgba(73, 72, 145, 0.849);
+  transform: scale(1.01);
 }
 
 .leader-header {
   padding: 15px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -31,13 +35,16 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .leader-badge {
-  background: rgba(255,255,255,0.2);
-  padding: 4px 8px;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 4px 12px;
+  border-radius: 20px;
   font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .toggle-btn {
@@ -62,7 +69,7 @@
 
 .leader-details {
   padding: 20px;
-  background: #f8f9fa;
+  background: rgba(248, 249, 250, 0.4);
 }
 
 .info-grid {
@@ -87,16 +94,16 @@
 
 .info-value {
   font-size: 1.1rem;
-  color: #2c3e50;
+  color: #703dc2;
   font-weight: bold;
 }
 
 .motto-section {
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   padding: 15px;
-  border-radius: 6px;
+  border-radius: 10px;
   margin-bottom: 15px;
-  border-left: 4px solid #e74c3c;
+  border-left: 4px solid #fcbaf6;
 }
 
 .motto-text {
@@ -107,17 +114,20 @@
 }
 
 .monologue-btn {
-  background: #e74c3c;
+  background: linear-gradient(90deg, #764ba2, #667eea);
+  box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%;
+  letter-spacing: 1px;
 }
 
 .monologue-btn:hover {
-  background: #c0392b;
+  background: #782bc0;
 }
