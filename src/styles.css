@@ -1,3 +1,9 @@
-body{
-    background-image: url(assets/bgimg.jpg);
+body {
+  background-image: url('assets/bgimg.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
 }

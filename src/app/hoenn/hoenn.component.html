@@ -1,0 +1,24 @@
+<div class="region-container">
+  <div class="region-header">
+    <h1>Hoenn Region Gym Leaders</h1>
+    <p>Discover the leaders of the Hoenn League and their powerful teams.</p>
+  </div>
+
+  <div class="leaders-grid">
+    @for (leader of leaders(); track leader.name) {
+      <div class="leader-card">
+        <div class="badge-img-wrapper">
+        </div>
+        <h3>{{ leader.name }}</h3>
+        <p><strong>Town:</strong> {{ leader.town }}</p>
+        <p><strong>Specialty:</strong> {{ leader.specialty }}</p>
+        <p><strong>Badge:</strong> {{ leader.badge }}</p>
+        
+        <div class="team-section">
+          <strong>Pokemon Team:</strong>
+          <p>{{ leader.team }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>

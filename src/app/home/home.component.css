@@ -1,5 +1,5 @@
 .home-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -8,7 +8,7 @@
   text-align: center;
   background: linear-gradient(135deg, #667eea 0%, #fcbaf6 100%);
   color: rgb(15, 15, 15);
-  padding: 40px 20px;
+  padding: 30px 20px;
   border-radius: 10px;
   margin-bottom: 40px;
 }
@@ -25,8 +25,8 @@
 
 .regions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .region-card {
@@ -34,7 +34,9 @@
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .region-card:hover {
@@ -44,16 +46,17 @@
 
 .region-card h2 {
   color: #2c3e50;
-  margin-bottom: 15px;
-  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .region-description {
   color: #666;
   font-style: italic;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #f0f0f0;
+  font-size: 1rem;
 }
 
 .region-history {
@@ -62,20 +65,21 @@
 
 .region-history h3 {
   color: #e74c3c;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }
 
 .region-history p {
   color: #555;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .region-details {
   background: #f8f9fa;
-  padding: 15px;
+  padding: 12px;
   border-radius: 8px;
   border-left: 4px solid #e74c3c;
+  margin-top: auto;
 }
 
 .region-details p {
